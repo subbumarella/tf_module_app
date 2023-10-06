@@ -98,7 +98,7 @@ resource "null_resource" "ansible" {
       connection{
          type="ssh"
          user="centos"
-         password="Devops321"
+         password="DevOps321"
          host=aws_instance.my_ec2.public_ip
       }
       inline=[
