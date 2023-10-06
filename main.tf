@@ -103,7 +103,7 @@ resource "null_resource" "ansible" {
       }
       inline=[
         "sudo labauto ansible",
-        "ansible-pull -i localhost, -U https://github.com/subbumarella/my_learn_ansible.git main.yml -e env=${var.environment} -e role_name=${var.components}"
+        "ansible-pull -i localhost, -U https://github.com/subbumarella/my_learn_ansible.git main.yml -e env=${var.environment} -e role_name=${var.component}"
       ]
     }
   
